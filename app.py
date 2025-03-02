@@ -56,4 +56,5 @@ def analyze():
     return render_template("results.html", positive=positive_results, negative=negative_results)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Render의 환경 변수에서 포트 가져오기
+    app.run(host="0.0.0.0", port=port)
