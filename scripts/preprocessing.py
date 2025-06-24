@@ -4,8 +4,9 @@ import re
 import time
 
 # 네이버 API 키 설정
-CLIENT_ID = "L1c5IBoQZ2wioGa61pTX"
-CLIENT_SECRET = "5JtlPeI4Yn"
+# ENV로 할것
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 MAX_DISPLAY = 100  # 한 번에 가져올 뉴스 개수
 
 
